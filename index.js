@@ -10,6 +10,7 @@ const haveAcc = document.getElementById("haveAcc");
 const haveAccBtn = document.getElementById("haveAccBtn");
 const donotHaveAcc = document.getElementById("donotHaveAcc");
 const donotHaveAccBtn = document.getElementById("donotHaveAccBtn");
+const signModalInputs = document.querySelectorAll("input");
 
 const toggleBackDrop = () => {
   backdrop.classList.toggle("visible");
@@ -18,6 +19,7 @@ const toggleBackDrop = () => {
 const showSignModal = () => {
   signModalMain.classList.toggle("visible");
   toggleBackDrop();
+  clearSignModalInputs();
 };
 
 const showSignupModal = () => {
@@ -35,6 +37,12 @@ const showLoginModal = () => {
   haveAcc.className = "";
   donotHaveAcc.className = "visible";
   showSignModal();
+};
+
+const clearSignModalInputs = () => {
+  for (const input of signModalInputs) {
+    input.value = "";
+  }
 };
 
 const toggleToLoginModal = () => {
