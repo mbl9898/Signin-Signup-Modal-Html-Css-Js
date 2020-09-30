@@ -10,7 +10,7 @@ const haveAcc = document.getElementById("haveAcc");
 const haveAccBtn = document.getElementById("haveAccBtn");
 const donotHaveAcc = document.getElementById("donotHaveAcc");
 const donotHaveAccBtn = document.getElementById("donotHaveAccBtn");
-const signModalInputs = document.querySelectorAll("input");
+const signModalInputs = document.querySelectorAll(".signInput");
 
 const toggleBackDrop = () => {
   backdrop.classList.toggle("visible");
