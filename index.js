@@ -2,7 +2,7 @@ const signModalMain = document.getElementById("signModalMain");
 const signupBtn = document.getElementById("signupBtn");
 const loginBtn = document.getElementById("loginBtn");
 const backdrop = document.getElementById("backdrop");
-const faLeft = document.getElementById("faLeft");
+const closeIcon = document.getElementById("closeIcon");
 const signFormTitle = document.getElementById("signFormTitle");
 const signNameInput = document.getElementById("signNameInput");
 const signModalBtn = document.getElementById("signModalBtn");
@@ -57,6 +57,6 @@ const toggleToSignupModal = () => {
 signupBtn.addEventListener("click", showSignupModal);
 loginBtn.addEventListener("click", showLoginModal);
 backdrop.addEventListener("click", showSignModal);
-faLeft.addEventListener("click", showSignModal);
+closeIcon.addEventListener("click", showSignModal);
 haveAccBtn.addEventListener("click", toggleToLoginModal);
 donotHaveAccBtn.addEventListener("click", toggleToSignupModal);

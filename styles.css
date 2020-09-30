@@ -63,6 +63,10 @@ label {
   display: none;
 }
 
+.material-icons.md-36 {
+  font-size: 36px;
+}
+
 .signModalInner {
   display: flex;
   flex-direction: row;
@@ -73,14 +77,14 @@ label {
   pointer-events: all !important;
 }
 
-.fa-times {
-  font-size: 1.7rem;
+.closeIcon {
   position: absolute;
   top: 1%;
   right: 1%;
   color: #00329e;
+  cursor: pointer;
 }
-.fa-times:hover {
+.closeIcon:hover {
   color: #02205f;
 }
 
