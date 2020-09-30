@@ -1,0 +1,223 @@
+body {
+  font-family: "Comfortaa", cursive;
+}
+
+label {
+  margin: 0.5rem 0;
+  width: 60%;
+}
+
+.btn {
+  font: inherit;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #00329e;
+  background: #00329e;
+  color: white;
+  border-radius: 6px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.26);
+  cursor: pointer;
+  /* margin: 0 0.5rem; */
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
+
+.pBold {
+  color: #fff;
+}
+
+.pReg {
+  color: #aeaebe;
+}
+
+#backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgb(0 0 0 / 38%);
+  z-index: 10;
+  pointer-events: none;
+  display: none;
+}
+
+#signModalMain {
+  position: fixed;
+  z-index: 100;
+  background: #ffffff00;
+  border-radius: 10px;
+  width: 50%;
+  align-self: center;
+  height: 70vh;
+  top: 15vh;
+  left: 25%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  display: none;
+}
+
+.signModalInner {
+  display: flex;
+  flex-direction: row;
+}
+
+.visible {
+  display: block !important;
+  pointer-events: all !important;
+}
+
+.fa-times {
+  font-size: 1.7rem;
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  color: #00329e;
+}
+.fa-times:hover {
+  color: #02205f;
+}
+
+.signInfo {
+  background-color: #00329ef0;
+  height: 70vh;
+  border-radius: 9px 0 0 10px;
+  width: 45%;
+  color: white;
+}
+
+.signInfoInner {
+  padding: 1rem;
+}
+
+.signInfoHeader {
+  display: flex;
+  flex-direction: row;
+}
+
+.signInfoLogo {
+  font-size: 3rem;
+  align-self: center;
+}
+
+.signInfoTitle {
+  padding: 1rem;
+}
+
+.signInfoBody {
+  font-size: 0.9rem;
+  padding: 1rem 1rem 0 1rem;
+  line-height: 1.8rem;
+}
+
+.signForm {
+  display: flex;
+  background-color: #ebf1fff0;
+  flex-direction: column;
+  justify-content: center;
+  width: 55%;
+  /* padding: 0 1% 0 5%; */
+  height: 70vh;
+  border-radius: 0 10px 10px 0;
+}
+.signFormInner {
+  height: 50vh;
+}
+.pH3 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #00329e;
+  margin-left: 18%;
+}
+
+.signInput {
+  margin-left: 18%;
+  font: inherit;
+  border: 1px solid #ccc;
+  padding: 0.6rem 0.2rem;
+  color: #383838;
+  margin-bottom: 1rem;
+  border-radius: 0.3rem;
+  width: 60%;
+  box-shadow: 0 0px 3px rgba(0, 0, 0, 0.26);
+}
+
+.signBtn {
+  width: 62%;
+  margin-top: 1rem;
+  margin-left: 18%;
+  padding: 1rem;
+}
+
+#haveAcc {
+  display: none;
+  margin-top: 0.7rem;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+#haveAccBtn {
+  background-color: #ffffff00;
+  border: none;
+  font-family: inherit;
+  font-weight: bold;
+  color: #00329e;
+}
+#haveAccBtn:hover {
+  cursor: pointer;
+}
+
+#donotHaveAcc {
+  display: none;
+  margin-top: 0.7rem;
+  text-align: center;
+  font-size: 0.8rem;
+}
+#donotHaveAccBtn {
+  background-color: #ffffff00;
+  border: none;
+  font-family: inherit;
+  font-weight: bold;
+  color: #00329e;
+}
+#donotHaveAccBtn:hover {
+  cursor: pointer;
+}
+
+.trouble {
+  font-size: 0.8rem;
+  font-weight: bold;
+  position: absolute;
+  bottom: 2%;
+  right: 1%;
+}
+
+@media screen and (max-width: 838px) {
+  #signModalMain {
+    position: fixed;
+    z-index: 100;
+    background: white;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    display: none;
+  }
+
+  .signInfo {
+    height: 100vh;
+    border-radius: 0;
+  }
+
+  .signForm {
+    height: 100vh;
+    border-radius: 0;
+  }
+
+  .signFormInner {
+    height: 65vh;
+  }
+}

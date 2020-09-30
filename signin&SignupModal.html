@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signin & Signup Modal</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./index.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <button id="signupBtn" class="btn">Sign Up</button>
+    <button id="loginBtn" class="btn">Login</button>
+    <div id="backdrop" class="backdrop"></div>
+    <div id="signModalMain" class="signModalMain card">
+      <i id="faLeft" class="fas fa-times"></i>
+      <span class="trouble"
+        >Having trouble:
+        <a
+          style="text-decoration: none; color: inherit; color: #00329e"
+          href="mailto:muhammadbutt70@gmail.com"
+          >Get in touch</a
+        >
+      </span>
+      <div class="signModalInner">
+        <div class="signInfo">
+          <div class="signInfoInner">
+            <div class="signInfoHeader">
+              <i class="fab fa-stumbleupon-circle signInfoLogo"></i>
+              <h3 class="signInfoTitle">Learning MSA</h3>
+            </div>
+            <div class="signInfoBody">
+              <p class="pBold">
+                <strong>
+                  Implement user onboarding experiences with just a few click
+                </strong>
+              </p>
+              <p class="pReg">
+                Guide your customers on a fantastic journey within a web app
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="signForm">
+          <div class="signFormInner">
+            <p id="signFormTitle" class="pH3">Create your account</p>
+            <input
+              id="signNameInput"
+              class="signInput"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+            />
+            <input
+              class="signInput"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+            />
+            <input
+              class="signInput"
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+            />
+            <button id="signModalBtn" class="btn signBtn">Sign Up</button>
+            <br />
+            <p id="haveAcc">
+              Already have a account:<button id="haveAccBtn">Login</button>
+            </p>
+            <p id="donotHaveAcc">
+              Don't have a account:<button id="donotHaveAccBtn">Sign Up</button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
