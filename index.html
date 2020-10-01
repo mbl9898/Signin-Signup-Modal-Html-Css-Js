@@ -14,6 +14,7 @@
       rel="stylesheet"
     />
     <script src="./index.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
@@ -22,72 +23,77 @@
     />
   </head>
   <body>
-    <button id="signupBtn" class="btn">Sign Up</button>
-    <button id="loginBtn" class="btn">Login</button>
-    <div id="backdrop" class="backdrop"></div>
-    <div id="signModalMain" class="signModalMain card">
-      <!-- <i id="faLeft" class="fas fa-times"></i> -->
-      <i id="closeIcon" class="material-icons md-36 closeIcon"> close </i>
-      <span class="trouble"
-        >Having trouble:
-        <a
-          style="text-decoration: none; color: inherit; color: #00329e"
-          href="mailto:muhammadbutt70@gmail.com"
-          >Get in touch</a
-        >
-      </span>
-      <div class="signModalInner">
-        <div class="signInfo">
-          <div class="signInfoInner">
-            <div class="signInfoHeader">
-              <i class="fab fa-stumbleupon-circle signInfoLogo"></i>
-              <h3 class="signInfoTitle">Learning MSA</h3>
-            </div>
-            <div class="signInfoBody">
-              <p class="pBold">
-                <strong>
-                  Implement user onboarding experiences with just a few click
-                </strong>
-              </p>
-              <p class="pReg">
-                Guide your customers on a fantastic journey within a web app
-              </p>
+    <div id="particles-js"></div>
+    <div class="front">
+      <button id="signupBtn" class="btn">Sign Up</button>
+      <button id="loginBtn" class="btn">Login</button>
+      <div id="backdrop" class="backdrop"></div>
+      <div id="signModalMain" class="signModalMain card">
+        <!-- <i id="faLeft" class="fas fa-times"></i> -->
+        <i id="closeIcon" class="material-icons md-36 closeIcon"> close </i>
+        <span class="trouble"
+          >Having trouble:
+          <a
+            style="text-decoration: none; color: inherit; color: #00329e"
+            href="mailto:muhammadbutt70@gmail.com"
+            >Get in touch</a
+          >
+        </span>
+        <div class="signModalInner">
+          <div class="signInfo">
+            <div class="signInfoInner">
+              <div class="signInfoHeader">
+                <i class="fab fa-stumbleupon-circle signInfoLogo"></i>
+                <h3 class="signInfoTitle">Learning MSA</h3>
+              </div>
+              <div class="signInfoBody">
+                <p class="pBold">
+                  <strong>
+                    Implement user onboarding experiences with just a few click
+                  </strong>
+                </p>
+                <p class="pReg">
+                  Guide your customers on a fantastic journey within a web app
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="signForm">
-          <div class="signFormInner">
-            <p id="signFormTitle" class="pH3">Create your account</p>
-            <input
-              id="signNameInput"
-              class="signInput"
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Name"
-            />
-            <input
-              class="signInput"
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Email"
-            />
-            <input
-              class="signInput"
-              type="password"
-              name="password"
-              id="password"
-              placeholder="Password"
-            />
-            <button id="signModalBtn" class="btn signBtn">Sign Up</button>
-            <br />
-            <p id="haveAcc">
-              Already have a account:<button id="haveAccBtn">Login</button>
-            </p>
-            <p id="donotHaveAcc">
-              Don't have a account:<button id="donotHaveAccBtn">Sign Up</button>
-            </p>
+          <div class="signForm">
+            <div class="signFormInner">
+              <p id="signFormTitle" class="pH3">Create your account</p>
+              <input
+                id="signNameInput"
+                class="signInput"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name"
+              />
+              <input
+                class="signInput"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+              />
+              <input
+                class="signInput"
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+              />
+              <button id="signModalBtn" class="btn signBtn">Sign Up</button>
+              <br />
+              <p id="haveAcc">
+                Already have a account:<button id="haveAccBtn">Login</button>
+              </p>
+              <p id="donotHaveAcc">
+                Don't have a account:<button id="donotHaveAccBtn">
+                  Sign Up
+                </button>
+              </p>
+            </div>
           </div>
         </div>
       </div>

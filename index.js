@@ -1,3 +1,8 @@
+/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+particlesJS.load("particles-js", "./package.json", function () {
+  console.log("callback - particles.js config loaded");
+});
+
 const signModalMain = document.getElementById("signModalMain");
 const signupBtn = document.getElementById("signupBtn");
 const loginBtn = document.getElementById("loginBtn");
