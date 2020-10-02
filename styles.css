@@ -37,7 +37,8 @@ label {
 }
 
 #particles-js {
-  z-index: -10000;
+  height: 100vh;
+  z-index: -1;
 }
 
 .front {
